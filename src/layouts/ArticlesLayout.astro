@@ -1,0 +1,46 @@
+---
+import Layout from "./Layout.astro";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title: string;
+  date: string;
+  description: string;
+  originalLink: string;
+}
+
+const { title, date, description, originalLink = "" } = Astro.props;
+---
+
+<Layout title={title} description={description}>
+  <main class="container">
+    <div class="panel panel-default">
+      <div class="page-heading" style="padding:15px">
+        <h2>
+          {title}
+          <small>{date}</small>
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="alert alert-info">
+          <p><b>文章阅读引言</b></p>
+          <p>{description}</p>
+        </div>
+        <div class="article">
+          <slot />
+        </div>
+        <hr style="margin-top: 24px;" />
+        <a class="btn btn-primary" href="/articles" role="button"
+          ><Icon name="mdi:arrow-left" /> 返回</a
+        >
+        <a
+          href={originalLink}
+          class="btn btn-default"
+          role="button"
+          style="margin-left: 12px;"
+          >查看原始博客文章 <Icon name="mdi:open-in-new" /></a
+        >
+      </div>
+    </div>
+  </main>
+</Layout>
