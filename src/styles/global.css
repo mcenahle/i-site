@@ -16,6 +16,8 @@ p {
 
 code {
   font-family: "JetBrainsMono-Regular";
+  background-color: transparent;
+  color: #333;
 }
 
 a {
