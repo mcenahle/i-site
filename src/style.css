@@ -9,3 +9,7 @@
 code {
   font-family: "JetBrainsMono-Regular";
 }
+
+a {
+  text-decoration: none;
+}
