@@ -1,6 +1,7 @@
 ---
 import Navbar from "../../components/Navbar.astro";
 import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
 
 interface BlogModule {
   title: string;
@@ -41,7 +42,13 @@ const posts = Object.entries(modules)
       <div class="domain-card-header py-3 px-4 border-bottom">
         <h1 class="text-black fs-5 fw-bold mb-0">Mcenahle 的精选博客文章</h1>
 
-        <p>来自 blogsClub 的每月拾光</p>
+        <p>
+          来自 <a
+            href="https://www.blogsclub.org/monthly-picks.html"
+            target="_blank"
+            >blogsClub 的每月拾光 <Icon name="mdi:open-in-new" /></a
+          >
+        </p>
       </div>
 
       <div class="domain-card-body p-4">
