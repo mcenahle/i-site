@@ -14,6 +14,11 @@ const { title, date, description, originalLink = "" } = Astro.props;
 
 <Layout title={title} description={description}>
   <main class="container">
+    <ul class="breadcrumb">
+      <li><a href="/">i.mcenahle.page</a></li>
+      <li><a href="/articles">精选博客文章</a></li>
+      <li class="active">{title}</li>
+    </ul>
     <div class="panel panel-default">
       <div class="page-heading" style="padding:15px">
         <h2>
