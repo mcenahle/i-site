@@ -23,12 +23,14 @@ const { title, date, description, originalLink = "" } = Astro.props;
       <div class="page-heading" style="padding:15px">
         <h2>
           {title}
-          <small style="margin-left: 12px;">{date}</small>
+          <small style="margin-left: 12px;"
+            ><Icon name="mdi:calendar-month-outline" /> {date}</small
+          >
         </h2>
       </div>
       <div class="panel-body">
         <div class="alert alert-info">
-          <p><b>文章阅读引言</b></p>
+          <p><Icon name="mdi:information-outline" /> <b>文章阅读引言</b></p>
           <p>{description}</p>
         </div>
         <div class="article">
