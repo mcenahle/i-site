@@ -26,4 +26,5 @@ a {
 
 .article p {
   text-indent: 2em;
+  line-height: 2;
 }
