@@ -16,7 +16,7 @@ const { title, date, description, originalLink = "" } = Astro.props;
   <main class="container">
     <ul class="breadcrumb">
       <li><a href="/">i.mcenahle.page</a></li>
-      <li><a href="/articles">精选博客文章</a></li>
+      <li><a href="/articles/">精选博客文章</a></li>
       <li class="active">{title}</li>
     </ul>
     <div class="panel panel-default">
@@ -37,7 +37,7 @@ const { title, date, description, originalLink = "" } = Astro.props;
           <slot />
         </div>
         <hr style="margin-top: 24px;" />
-        <a class="btn btn-primary" href="/articles" role="button"
+        <a class="btn btn-primary" href="/articles/" role="button"
           ><Icon name="mdi:arrow-left" /> 返回</a
         >
         <a
