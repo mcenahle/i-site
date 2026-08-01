@@ -172,17 +172,17 @@ import { Icon } from "astro-icon/components";
     }
 
     // 点击 tab 时更新 URL hash
-    $('#myTab a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
-      window.location.hash = $(e.target).attr("href");
-    });
+    // $('#myTab a[data-toggle="tab"]').on("shown.bs.tab", function (e) {
+    //   window.location.hash = $(e.target).attr("href");
+    // });
 
     // 浏览器前进后退时切换
-    $(window).on("hashchange", function () {
-      var hash = window.location.hash;
+    // $(window).on("hashchange", function () {
+    //   var hash = window.location.hash;
 
-      if (hash) {
-        $('#myTab a[href="' + hash + '"]').tab("show");
-      }
-    });
+    //   if (hash) {
+    //     $('#myTab a[href="' + hash + '"]').tab("show");
+    //   }
+    // });
   });
 </script>
