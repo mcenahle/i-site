@@ -13,7 +13,13 @@ import { Icon } from "astro-icon/components";
       <a href="#hi" data-toggle="tab">主页网站</a>
     </li>
     <li><a href="#mail" data-toggle="tab">邮箱系统</a></li>
-    <li><a href="#blog" data-toggle="tab">博客网站</a></li>
+    <li>
+      <a href="#blog" data-toggle="tab"
+        >博客网站 <span class="label label-danger"
+          ><Icon name="mdi:party-popper" /></span
+        ></a
+      >
+    </li>
     <li class="dropdown">
       <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
         >其它杂项
@@ -36,7 +42,7 @@ import { Icon } from "astro-icon/components";
   </ul>
   <div id="myTabContent" class="tab-content">
     <div class="tab-pane fade in active" id="hi">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>
         个人主页网站中，主要提供了我的自我介绍，电子邮件等等信息。如有必要时，可通过该方式与我取得联系。
       </p>
@@ -49,7 +55,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="mail">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>
         邮箱系统用于接收 <code>i@mcenahle.page</code> 的所有邮箱及其发件。
       </p>
@@ -62,7 +68,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="blog">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>个人主要发文平台。</p>
       <a
         class="btn btn-primary"
@@ -73,7 +79,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="devdocs">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>开发文档网站。</p>
       <a
         class="btn btn-primary"
@@ -84,7 +90,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="sponsor">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>提供给我赞助的通道。</p>
       <a
         class="btn btn-primary"
@@ -95,7 +101,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="charity">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>记录我参与的所有公益记录。</p>
       <a
         class="btn btn-primary"
@@ -106,7 +112,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="imgbed">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>我的图床网站。不提供直接访问通道。</p>
       <a
         class="btn btn-primary disabled"
@@ -117,7 +123,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="admin-imgbed">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>管理我的图床。</p>
       <a
         class="btn btn-primary"
@@ -128,7 +134,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="mss">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p class="text-warning">
         由于性能问题和代码问题，计划进行一次重构。具体时间待定。
       </p>
@@ -142,7 +148,7 @@ import { Icon } from "astro-icon/components";
       >
     </div>
     <div class="tab-pane fade" id="certificates">
-      <p class="text-success">现行状态：运行中</p>
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
       <p>记录我获得的证书。</p>
       <p class="text-warning">此网站的部分内容需要通过验证才能访问。</p>
       <a
