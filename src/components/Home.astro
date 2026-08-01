@@ -27,6 +27,9 @@ import { Icon } from "astro-icon/components";
           <a href="#admin-imgbed" tabindex="-1" data-toggle="tab">图床管理</a>
         </li>
         <li><a href="#mss" tabindex="-1" data-toggle="tab">mc 生存存档</a></li>
+        <li>
+          <a href="#certificates" tabindex="-1" data-toggle="tab">证书存档</a>
+        </li>
       </ul>
     </li>
   </ul>
@@ -132,6 +135,18 @@ import { Icon } from "astro-icon/components";
       <a
         class="btn btn-primary"
         href="https://mss.mcenahle.page"
+        target="_blank"
+        rel="noopener noreferrer"
+        role="button">跳转 <Icon name="mdi:open-in-new" /></a
+      >
+    </div>
+    <div class="tab-pane fade" id="certificates">
+      <p class="text-success">现行状态：运行中</p>
+      <p>记录我获得的证书。</p>
+      <p class="text-warning">此网站的部分内容需要通过验证才能访问。</p>
+      <a
+        class="btn btn-primary"
+        href="https://certificates.mcenahle.page"
         target="_blank"
         rel="noopener noreferrer"
         role="button">跳转 <Icon name="mdi:open-in-new" /></a
