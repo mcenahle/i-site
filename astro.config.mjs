@@ -6,6 +6,7 @@ import icon from "astro-icon";
 export default defineConfig({
   site: "https://i.mcenahle.page",
   trailingSlash: "always",
+  prefetch: true,
   devToolbar: {
     enabled: false,
   },
