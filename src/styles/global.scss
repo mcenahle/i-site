@@ -11,6 +11,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
 }
 
 body::before {
@@ -31,12 +32,6 @@ body::before {
   pointer-events: none;
 }
 
-.navbar {
-  position: relative;
-  min-height: 50px;
-  border: 1px solid transparent;
-}
-
 footer {
   margin-top: auto;
 }
@@ -44,6 +39,8 @@ footer {
 .container {
   padding: 10px;
   flex: 1;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 p {
@@ -77,10 +74,16 @@ a {
   line-height: 2;
 }
 
-ul.nav.navbar-nav {
-  margin-top: 0.5px;
-  margin-bottom: 0.5px;
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+  background-color: #f8f8f8;
 }
+
+// ul.nav.navbar-nav {
+//   margin-top: 0.5px;
+//   margin-bottom: 0.5px;
+// }
 
 .pagefind-ui__result {
   padding: calc(10px * var(--pagefind-ui-scale)) 0

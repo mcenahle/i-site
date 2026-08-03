@@ -4,7 +4,11 @@ import { Icon } from "astro-icon/components";
 
 <meta charset="utf-8" />
 
-<nav class="navbar navbar-default" role="navigation" data-pagefind-ignore>
+<nav
+  class="navbar navbar-default navbar-fixed-top"
+  role="navigation"
+  data-pagefind-ignore
+>
   <div class="container-fluid">
     <div class="navbar-header">
       <button
@@ -27,8 +31,11 @@ import { Icon } from "astro-icon/components";
             ><Icon name="mdi:file-word-outline" /> 精选博客文章</a
           >
         </li>
-      </ul>
-      <ul class="nav navbar-nav">
+        <li>
+          <a href="/site-affairs-documents/"
+            ><Icon name="mdi:account-file-text" /> 站务文件</a
+          >
+        </li>
         <li><a href="/search/"><Icon name="mdi:search" /> 全站搜索</a></li>
       </ul>
     </div>
