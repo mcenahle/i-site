@@ -16,7 +16,7 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v6.0.5
         with:
-          version: 9
+          version: 10
 
       - name: Setup Node
         uses: actions/setup-node@v5
@@ -99,7 +99,7 @@ jobs:
           IMG_COUNT=$(find src \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" -o -name "*.gif" \) | wc -l)
           echo "Images: $IMG_COUNT"
 
-          DIST_SIZE=$(du -sh src/.vuepress/dist | cut -f1)
+          DIST_SIZE=$(du -sh dist | cut -f1)
           echo "Build size: $DIST_SIZE"
 
           echo "✅ Statistics completed"
