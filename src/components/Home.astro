@@ -26,6 +26,7 @@ import { Icon } from "astro-icon/components";
         <b class="caret"></b>
       </a>
       <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+        <li><a href="#api" tabindex="-1" data-toggle="tab">api</a></li>
         <li><a href="#devdocs" tabindex="-1" data-toggle="tab">devdocs</a></li>
         <li><a href="#sponsor" tabindex="-1" data-toggle="tab">赞助页</a></li>
         <li><a href="#charity" tabindex="-1" data-toggle="tab">公益记录</a></li>
@@ -83,6 +84,17 @@ import { Icon } from "astro-icon/components";
       <a
         class="btn btn-primary"
         href="https://blog.mcenahle.page"
+        target="_blank"
+        rel="noopener noreferrer"
+        role="button">跳转 <Icon name="mdi:open-in-new" /></a
+      >
+    </div>
+    <div class="tab-pane fade" id="api">
+      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
+      <p>api 服务网站。</p>
+      <a
+        class="btn btn-primary"
+        href="https://api.mcenahle.page"
         target="_blank"
         rel="noopener noreferrer"
         role="button">跳转 <Icon name="mdi:open-in-new" /></a
