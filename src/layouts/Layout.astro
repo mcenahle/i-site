@@ -1,6 +1,13 @@
 ---
 import "../styles/global.scss";
 import { Icon } from "astro-icon/components";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = "i.mcenahle.page", description = "" } = Astro.props;
 ---
 
 <!doctype html>
@@ -22,12 +29,12 @@ import { Icon } from "astro-icon/components";
     ></script>
 
     <meta name="generator" content={Astro.generator} />
-    <title>i.mcenahle.page</title>
+    <title>{title}</title>
   </head>
-  <body>
+  <body data-pagefind-body>
     <slot />
   </body>
-  <footer>
+  <footer data-pagefind-ignore>
     <hr />
     <p style="text-align: center;">
       <img
