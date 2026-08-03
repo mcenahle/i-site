@@ -2,6 +2,24 @@ html {
   scroll-behavior: smooth;
 }
 
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url("/images/background.avif");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.2;
+  z-index: -1;
+  pointer-events: none;
+}
+
 p {
   margin-bottom: 10px;
 }
