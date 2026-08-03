@@ -33,8 +33,8 @@ const posts = Object.entries(modules)
     };
   })
 
-  // 按日期从新到旧排列
-  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+  // 按日期从旧到新排列
+  .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 ---
 
 <title>mcenahle 站务文件</title>
