@@ -56,6 +56,11 @@ ul.nav.navbar-nav {
   margin-bottom: 0.5px;
 }
 
+.pagefind-ui__result {
+  padding: calc(10px * var(--pagefind-ui-scale)) 0
+    calc(10px * var(--pagefind-ui-scale)) !important;
+}
+
 #backTop {
   position: fixed;
   right: 20px;
