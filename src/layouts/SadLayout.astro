@@ -25,10 +25,10 @@ const { title, date, no, statusTop, statusInfo = "" } = Astro.props;
       <div class="page-heading" style="padding:15px">
         <h2>
           {title}
-          <small style="margin-left: 12px;"
-            ><Icon name="mdi:calendar-month-outline" /> {date}</small
-          >
         </h2>
+        <h5 style="text-align: center;">
+          <Icon name="mdi:calendar-month-outline" /> 发布日期：{date}
+        </h5>
       </div>
       <div class="panel-body">
         <div class="article">
