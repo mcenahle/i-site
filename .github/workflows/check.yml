@@ -96,7 +96,7 @@ jobs:
           HTML_COUNT=$(find dist -name "*.html" | wc -l)
           echo "Generated HTML pages: $HTML_COUNT"
 
-          IMG_COUNT=$(find src \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" -o -name "*.gif" \) | wc -l)
+          IMG_COUNT=$(find src \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" -o -name "*.webp" -o -name "*.avif" -o -name "*.gif" \) | wc -l)
           echo "Images: $IMG_COUNT"
 
           DIST_SIZE=$(du -sh dist | cut -f1)
