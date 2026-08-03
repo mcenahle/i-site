@@ -1,0 +1,51 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import SadLayout from "../../layouts/SadLayout.astro";
+
+export const title = "关于 mcenahle.com 网站变更域名的公告";
+export const no = "mcenahle 站务文件-2026【3】号";
+export const date = "2026-05-09";
+export const statusTop = "已执行完结。";
+export const statusInfo =
+  "本公告所描述的内容已经执行完毕，但部分内容可能已经发生变动。";
+---
+
+<Navbar />
+
+<SadLayout
+  title={title}
+  date={date}
+  no={no}
+  statusTop={statusTop}
+  statusInfo={statusInfo}
+>
+  <div style="text-align:right;">
+    <p>{no}</p>
+  </div>
+  <p>
+    由于 <code>.com</code> 域名长期以来具有较强的商业网站属性，而本站作为个人性质的非营利网站，其整体定位与
+    <code>.com</code> 域名风格存在一定差异。
+  </p>
+  <p>
+    在对多个域名后缀进行调研后，决定启用更具个人主页属性的 <code>.page</code> 域名作为主站地址。
+  </p>
+  <p>现决定如下：</p>
+  <ol>
+    <li>
+      自 2026 年 7 月 1 日 8:00 起，个人主页网站主域名由 <code
+        >https://mcenahle.com</code
+      > 变更为 <code>https://mcenahle.page</code>；
+    </li>
+    <li>
+      <code>mcenahle.com</code> 将作为保留域名继续持有，并跳转至新域名 <code
+        >https://mcenahle.page</code
+      >；
+    </li>
+    <li>其余 <code>*.mcenahle.com</code> 子站点保持不变。</li>
+  </ol>
+  <p>感谢各位的理解与支持。</p>
+  <div style="text-align:right;">
+    <p>Mcenahle</p>
+    <p>2026年5月9日</p>
+  </div>
+</SadLayout>

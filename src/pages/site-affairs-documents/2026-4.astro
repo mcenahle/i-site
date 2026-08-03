@@ -1,0 +1,49 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import SadLayout from "../../layouts/SadLayout.astro";
+
+export const title = "关于 mcenahle.com 网站启用版本号的公告";
+export const no = "mcenahle 站务文件-2026【4】号";
+export const date = "2026-05-12";
+export const statusTop = "正在持续执行。";
+export const statusInfo = "本公告所描述的内容正在长期执行。";
+---
+
+<Navbar />
+
+<SadLayout
+  title={title}
+  date={date}
+  no={no}
+  statusTop={statusTop}
+  statusInfo={statusInfo}
+>
+  <div style="text-align:right;">
+    <p>{no}</p>
+  </div>
+  <p>
+    为进一步提升网站内容管理的规范性与可维护性，并将所学的护理精神中的严谨性落实到网站建设实践中，自
+    2026 年 5 月 12 日（国际护士节）起，<a
+      href="http://mcenahle.com"
+      target="_blank"
+      rel="noopener noreferrer">mcenahle.com</a
+    > 网站正式启用版本号规则。
+  </p>
+  <p>
+    目前，本网站采用 <code>vx.x(.x)</code> 的版本号格式。网站 Releases 列表可于以下页面查看：
+  </p>
+  <p>
+    <a
+      href="https://github.com/mcenahle/hope-vuepress/releases"
+      target="_blank"
+      rel="noopener noreferrer"
+      >https://github.com/mcenahle/hope-vuepress/releases</a
+    >
+  </p>
+  <p>感谢各位的理解与支持。</p>
+
+  <div style="text-align:right;">
+    <p>Mcenahle</p>
+    <p>2026年5月12日</p>
+  </div>
+</SadLayout>
