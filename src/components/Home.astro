@@ -46,10 +46,10 @@ import { Icon } from "astro-icon/components";
       <div class="alert alert-info">
         <p>
           <Icon name="mdi:content-cut" />
-          &nbsp;<b>网站正在考虑进行迁移。</b><button
-            class="btn btn-info"
-            data-toggle="modal"
-            data-target="#migrateModal">查看详细信息</button
+          &nbsp;<b>网站正在考虑进行迁移。</b><a
+            href="/site-affairs-documents/2026-6/"
+          >
+            查看详细信息 <Icon name="mdi:link" /></a
           >。
         </p>
       </div>
@@ -182,56 +182,6 @@ import { Icon } from "astro-icon/components";
       >
     </div>
   </div>
-</div>
-
-<div
-  class="modal fade"
-  id="migrateModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="migrateModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-hidden="true">&times;</button
-        >
-        <h4 class="modal-title" id="myModalLabel">
-          关于双网站内容迁移及后续主页调整的公告-[mcenahle 站务文件-2026【6】号]
-        </h4>
-      </div>
-      <div class="modal-body" style="font-size: 15px">
-        <p style="text-indent: 2em;">
-          目前，i.mcenahle.page网站（以下简称i网站）已经基本成型，且在如今vibe
-          coding的浪潮下，依旧能保持“手搓”代码，以希望保留更多属于个人网站的特色。而在4-6月主要建设的hi.mcenahle.page网站（以下简称hi网站）主要是以文档为主，缺乏一定的可定制性。
-        </p>
-        <p style="text-indent: 2em;">
-          为逐步完善个人品牌性质，决定逐步淘汰hi网站。具体情况如下：
-        </p>
-        <ol>
-          <li>
-            2027年3月前，逐步将hi网站的内容迁移至i网站，并完成必需的功能建设；
-          </li>
-          <li>
-            2027年5月前，将原有的hi网站域名废弃，改为home.mcenahle.page，且重新发起Pull
-            request，申请变更mcenahle.is-a.dev和mcenahle.is-a-good.dev的仓库归属。
-          </li>
-        </ol>
-        <p style="text-align: right;">Mcenahle</p>
-        <p style="text-align: right;">2026年8月2日</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"
-          >关闭</button
-        >
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal -->
 </div>
 
 <script>
