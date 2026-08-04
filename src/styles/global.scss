@@ -80,9 +80,14 @@ a {
   text-decoration: none;
 }
 
-.article p {
-  text-indent: 2em;
-  line-height: 2;
+.article {
+  p {
+    text-indent: 2em;
+    line-height: 2;
+  }
+  li {
+    line-height: 2;
+  }
 }
 
 .navbar-default .navbar-collapse,
