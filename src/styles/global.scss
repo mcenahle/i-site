@@ -76,6 +76,15 @@ code {
   color: #333;
 }
 
+.navbar-default {
+  background-color: rgba(123, 182, 255, 0.4);
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 a {
   text-decoration: none;
 }
@@ -91,17 +100,6 @@ $article-line-height: 2;
     line-height: $article-line-height;
   }
 }
-
-.navbar-default .navbar-collapse,
-.navbar-default .navbar-form {
-  border-color: #e7e7e7;
-  background-color: #f8f8f8;
-}
-
-// ul.nav.navbar-nav {
-//   margin-top: 0.5px;
-//   margin-bottom: 0.5px;
-// }
 
 .pagefind-ui__result {
   padding: calc(10px * var(--pagefind-ui-scale)) 0
