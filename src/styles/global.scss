@@ -81,8 +81,8 @@ code {
   border: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 
-  backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
 }
 
 a {
