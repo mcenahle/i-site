@@ -32,6 +32,15 @@ const { title = "i.mcenahle.page", description = "" } = Astro.props;
     <title>{title}</title>
   </head>
   <body id="top" data-pagefind-body>
+    <div class="alert alert-info" id="infos">
+      <Icon name="mdi:verified" /> 本网站为 Mcenahle 主页网站。目前正在开发中。<a
+        href="#"
+        data-toggle="modal"
+        data-target="#infosModal"
+        ><Icon name="mdi:information-slab-circle-outline" />
+        &nbsp;<u>了解更多信息</u></a
+      >
+    </div>
     <slot />
     <button id="backTop" class="btn btn-primary"
       ><Icon name="mdi:arrow-top" style="height:28px; width:20px" />
@@ -60,6 +69,44 @@ const { title = "i.mcenahle.page", description = "" } = Astro.props;
       <br />
     </footer>
   </body>
+
+  <div
+    class="modal fade"
+    id="infosModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="infosModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-hidden="true">&times;</button
+          >
+          <h4 class="modal-title" id="infosModalLabel">
+            本网站为 Mcenahle 主页网站（正在开发中）。
+          </h4>
+        </div>
+        <div class="modal-body">
+          <p>
+            <Icon name="mdi:web" /> 官方网站使用 mcenahle.page 或者其它域名，例如
+            mcenahle.dev。
+          </p>
+          <p><Icon name="mdi:https" /> 安全网站使用 HTTPS。</p>
+          <p><Icon name="mdi:github" /> 源代码可在 GitHub 上获取。</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal"
+            >关闭</button
+          >
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+  </div>
 
   <script>
     const backTop = document.getElementById("backTop");
