@@ -37,48 +37,39 @@ const posts = Object.entries(modules)
   .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
 ---
 
-<title>mcenahle 站务文件</title>
-<meta charset="utf-8" />
-
 <Navbar />
 
 <Layout title="mcenahle 站务文件" description="mcenahle 站务文件">
   <main class="container">
-    <div class="domain-card bg-white shadow-sm overflow-hidden rounded-3">
-      <div class="domain-card-header border-bottom">
-        <h2 class="text-black fs-5 fw-bold mb-0">mcenahle 站务文件</h2>
+    <div class="rounded-3">
+      <div class="domain-card-header">
+        <h2 class="text-black fw-bold">mcenahle 站务文件</h2>
       </div>
 
-      <div class="domain-card-body p-4">
+      <div class="domain-card-body">
         {
           posts.length === 0 ? (
-            <p class="text-muted mb-0">暂时还没有文章。</p>
+            <p class="text-muted">暂时还没有文章。</p>
           ) : (
             <div class="list-group list-group-flush">
               {posts.map((post) => (
                 <a
                   href={post.url}
-                  class="list-group-item list-group-item-action px-0 py-3"
+                  class="list-group-item list-group-item-action"
                 >
-                  <div class="d-flex justify-content-between gap-3">
+                  <div class="d-flex justify-content-between">
                     <div>
                       <div class="fw-bold text-body">{post.title}</div>
 
-                      {post.no && <div class="text-muted mt-1">{post.no}</div>}
+                      {post.no && <div class="text-muted">{post.no}</div>}
 
-                      <status
-                        datetime={post.date}
-                        class="small text-muted flex-shrink-0"
-                      >
+                      <status datetime={post.date} class="small text-muted">
                         {post.statusTop}
                         {post.statusInfo}
                       </status>
                     </div>
 
-                    <time
-                      datetime={post.date}
-                      class="small text-muted flex-shrink-0"
-                    >
+                    <time datetime={post.date} class="small text-muted">
                       <Icon name="mdi:calendar-month-outline" /> {post.date}
                     </time>
                   </div>
