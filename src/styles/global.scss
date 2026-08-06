@@ -115,6 +115,21 @@ $article-line-height: 2;
     calc(10px * var(--pagefind-ui-scale)) !important;
 }
 
+$status-color: #420f95;
+
+.btn-status {
+  color: $status-color;
+  background-color: #ffffff;
+  border-color: $status-color;
+  &:hover,
+  &:active,
+  &:focus {
+    color: $status-color;
+    background-color: #ffffff;
+    border-color: $status-color;
+  }
+}
+
 #backTop {
   position: fixed;
   right: 20px;
