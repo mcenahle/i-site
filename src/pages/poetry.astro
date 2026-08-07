@@ -1,0 +1,22 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="我的诗歌（现代诗）">
+  <Navbar />
+  <main>
+    <div class="container">
+      <h2>我的诗歌（现代诗）</h2>
+      <div class="well well-sm">
+        问世间情是何物<br />
+        直教生死相许<br />
+        如今有些人们不像大雁<br />
+        而是为了房产证名字<br />
+        争斗不休
+      </div>
+      <p><i><Icon name="mdi:calendar-month" /> 日期：2026年8月7日</i></p>
+    </div>
+  </main>
+</Layout>
