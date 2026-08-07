@@ -1,6 +1,7 @@
 ---
 import "../styles/global.scss";
 import { Icon } from "astro-icon/components";
+import "sweetalert2/themes/material-ui.css";
 
 interface Props {
   title?: string;
@@ -58,7 +59,9 @@ const { title = "i.mcenahle.page", description = "" } = Astro.props;
           src="/not-by-ai-resources/Written By Human/_SVG/Written-By-Human-Not-By-AI-Badge-white.svg"
           alt="Written By Human Badge"
           width="80"
+          style="margin-right: 12px;"
         />
+        <button id="delete-btn">背景图片拍摄地</button>
       </p>
       <p style="text-align: center;">
         © 2026 i.mcenahle.page. <a
@@ -123,6 +126,23 @@ const { title = "i.mcenahle.page", description = "" } = Astro.props;
       window.scrollTo({
         top: 0,
         behavior: "smooth",
+      });
+    });
+  </script>
+
+  <script>
+    import Swal from "sweetalert2";
+
+    const btn = document.querySelector("#delete-btn");
+
+    btn?.addEventListener("click", () => {
+      Swal.fire({
+        title: "背景图片拍摄地",
+        theme: "material-ui",
+        text: "上海市崇明区城桥镇南门长江大堤。",
+        icon: "info",
+        showCancelButton: false,
+        confirmButtonText: "确定",
       });
     });
   </script>
