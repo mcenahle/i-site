@@ -1,0 +1,131 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="个人独立游戏 - Mcenahle Game">
+  <Navbar />
+  <main>
+    <div class="container">
+      <h2>个人独立游戏 - Mcenahle Game</h2>
+      <table class="table table-striped">
+        <caption>游戏迭代版本</caption>
+        <thead>
+          <tr>
+            <th>版本号</th>
+            <th>数值版本号</th>
+            <th>版本名称</th>
+            <th>介绍</th>
+            <th>下载</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>v0.0.6</td>
+            <td>6</td>
+            <td>文案、设置和背景图片更新</td>
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.6"
+                target="_blank"
+                >版本介绍 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.6"
+                target="_blank"
+                >下载 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+          </tr>
+          <tr>
+            <td>v0.0.5</td>
+            <td>5</td>
+            <td>Android 自动发布</td>
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.5"
+                target="_blank"
+                >版本介绍 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.5"
+                target="_blank"
+                >下载 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+          </tr>
+          <tr>
+            <td>v0.0.4</td>
+            <td>-</td>
+            <td>修复 Windows 自动发布</td>
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.4"
+                target="_blank"
+                >版本介绍 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+            <td
+              ><i>仅 Windows 版，且非纯正的 0.0.4 版本（忽略了构建过程）。</i>
+              <a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.4"
+                target="_blank"
+                >下载 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+          </tr>
+          <tr>
+            <td>v0.0.3</td>
+            <td>-</td>
+            <td>windows 构建自动发布</td>
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.3"
+                target="_blank"
+                >版本介绍 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+            <td style="color:brown"
+              ><Icon name="mdi:window-close" /> 无可用留档。</td
+            >
+          </tr>
+          <tr>
+            <td>v0.0.2</td>
+            <td>-</td>
+            <td>支持 windows 构建自动化</td>
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.2"
+                target="_blank"
+                >版本介绍 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+            <td style="color:brown"
+              ><Icon name="mdi:window-close" /> 无可用留档。</td
+            >
+          </tr>
+          <tr>
+            <td>v0.0.1</td>
+            <td>-</td>
+            <td>游戏开始开发</td>
+            <td
+              ><a
+                href="https://github.com/mcenahle/game/releases/tag/v0.0.1"
+                target="_blank"
+                >版本介绍 <Icon name="mdi:open-in-new" />
+              </a></td
+            >
+            <td style="color:brown"
+              ><Icon name="mdi:window-close" /> 无可用留档。</td
+            >
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</Layout>
