@@ -1,0 +1,46 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="游戏即将到来和不计划加入的功能">
+  <Navbar />
+  <main>
+    <div class="container">
+      <h2>游戏即将到来和不计划加入的功能</h2>
+      <h3>一、Mcenahle Game 即将到来的功能</h3>
+      <h4>（一）自动化构建&发布</h4>
+      <ol>
+        <li>
+          <Icon name="svg-spinners:90-ring-with-bg" /> 支持网页版本的自动化构建并发布发行版。（在
+          0.0.3 发布时 <a
+            href="https://github.com/mcenahle/game/releases/tag/v0.0.3"
+            target="_blank"
+            >末次提及 <Icon name="mdi:open-in-new" />
+          </a>，加入日期待定）
+        </li>
+      </ol>
+      <h4>（二）游戏更新策略</h4>
+      <ol>
+        <li>
+          <Icon name="svg-spinners:90-ring-with-bg" /> 支持玩家自动进行检查和安装更新，不需要再前往发布页面进行手动查看。（加入日期待定）
+        </li>
+      </ol>
+      <h3>
+        二、Mcenahle Game <span style="color:rgb(225, 83, 83);">不计划加入</span
+        >的功能
+      </h3>
+      <h4>自动化构建&发布</h4>
+      <ol>
+        <li>
+          <Icon name="mdi:window-close" style="color:rgb(217, 74, 74)" /> 支持 iOS
+          版本的自动化构建并发布发行版。
+        </li>
+        <li>
+          <Icon name="mdi:window-close" style="color:rgb(217, 74, 74)" /> 上架应用商店并进行收费。
+        </li>
+      </ol>
+    </div>
+  </main>
+</Layout>
