@@ -158,6 +158,7 @@ $status-color: #420f95;
   opacity: 0;
   visibility: hidden;
   transition: 0.25s;
+  z-index: 1000;
 }
 
 #backTop.show {
@@ -166,10 +167,37 @@ $status-color: #420f95;
 }
 
 footer {
-  background: linear-gradient(180deg, transparent, #b7b2aba9 45%, #585756bd);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(121, 175, 230, 0.346) 45%,
+    rgba(39, 106, 173, 0.572) 100%
+  );
+
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+
+  color: #fff;
+  padding: 70px 0 25px;
   color: #fff;
   padding-top: 30px;
   padding-bottom: 20px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent
+  );
 }
 
 .footer-text-left,
