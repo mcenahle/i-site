@@ -109,26 +109,6 @@ a {
   text-decoration: none;
 }
 
-.container a,
-footer a,
-#infos a {
-  outline-offset: -2px;
-  transition: outline-offset 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.container a:focus,
-footer a:focus,
-#infos a:focus {
-  outline: 2px solid #0071bb;
-  outline-offset: 2px;
-}
-
-.container a:hover,
-footer a:hover,
-#infos a:hover {
-  color: #205493;
-}
-
 $article-line-height: 2;
 
 .article {
