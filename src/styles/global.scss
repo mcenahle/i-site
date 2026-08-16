@@ -43,6 +43,12 @@ footer {
   padding-left: 15px;
 }
 
+@media (width <= 480px) {
+  .container {
+    margin-bottom: 20px;
+  }
+}
+
 p {
   margin-bottom: 10px;
 }
@@ -157,4 +163,22 @@ $status-color: #420f95;
 #backTop.show {
   opacity: 1;
   visibility: visible;
+}
+
+footer {
+  background: #585756;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.footer-text-left,
+.text-rightWord {
+  color: #b6b5b5;
+  font-size: 13px;
+}
+
+footer img {
+  max-width: 100%;
+  height: auto;
 }

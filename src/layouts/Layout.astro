@@ -1,5 +1,6 @@
 ---
 import "../styles/global.scss";
+import Footer from "../components/Footer.astro";
 import { Icon } from "astro-icon/components";
 import "sweetalert2/themes/material-ui.css";
 
@@ -46,33 +47,7 @@ const { title = "i.mcenahle.page", description = "" } = Astro.props;
     <button id="backTop" class="btn btn-primary"
       ><Icon name="mdi:arrow-top" style="height:28px; width:20px" />
     </button>
-    <footer data-pagefind-ignore>
-      <hr />
-      <p style="text-align: center;">
-        <img
-          src="/not-by-ai-resources/Photographed By Human/_SVG/Photographed-By-Human-Not-By-AI-Badge-white.svg"
-          alt="Photographed By Human Badge"
-          width="80"
-          style="margin-right: 12px;"
-        />
-        <img
-          src="/not-by-ai-resources/Written By Human/_SVG/Written-By-Human-Not-By-AI-Badge-white.svg"
-          alt="Written By Human Badge"
-          width="80"
-          style="margin-right: 12px;"
-        />
-        <button id="delete-btn" class="btn btn-default btn-xs"
-          ><Icon name="mdi:picture" /> 背景图片拍摄地</button
-        >
-      </p>
-      <p style="text-align: center;">
-        © 2026 i.mcenahle.page. <a
-          href="https://mn.edu.kg/gh/i-site/"
-          target="_blank"><Icon name="mdi:github" /> 网站源代码</a
-        >
-      </p>
-      <br />
-    </footer>
+    <Footer />
   </body>
 
   <div
@@ -128,23 +103,6 @@ const { title = "i.mcenahle.page", description = "" } = Astro.props;
       window.scrollTo({
         top: 0,
         behavior: "smooth",
-      });
-    });
-  </script>
-
-  <script>
-    import Swal from "sweetalert2";
-
-    const btn = document.querySelector("#delete-btn");
-
-    btn?.addEventListener("click", () => {
-      Swal.fire({
-        title: "背景图片拍摄地",
-        theme: "material-ui",
-        text: "上海市崇明区城桥镇南门长江大堤。",
-        icon: "info",
-        showCancelButton: false,
-        confirmButtonText: "确定",
       });
     });
   </script>
