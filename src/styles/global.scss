@@ -214,3 +214,13 @@ footer img {
   max-width: 100%;
   height: auto;
 }
+
+#footer-right-border {
+  margin-top: 36px;
+}
+
+@media (width <= 480px) {
+  #footer-right-border {
+    margin-top: 6px;
+  }
+}
