@@ -1,3 +1,8 @@
+@import url("/fonts/geist/Regular/result.css");
+@import url("/fonts/geist/Italic/result.css");
+@import url("/fonts/geist/Bold/result.css");
+@import url("/fonts/geist/BoldItalic/result.css");
+
 html {
   scroll-behavior: smooth;
 }
@@ -12,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 60px;
+  font-family: "Geist";
 }
 
 body::before {
