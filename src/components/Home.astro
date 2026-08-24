@@ -80,7 +80,13 @@ import { Icon } from "astro-icon/components";
     </div>
     <div class="tab-pane fade" id="blog">
       <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
-      <p>个人主要发文平台。</p>
+      <p>
+        个人主要发文平台。<a
+          href="#"
+          data-toggle="modal"
+          data-target="#blogHistoryModal">查看我的博客网站历史</a
+        >。
+      </p>
       <a
         class="btn btn-primary"
         href="https://blog.mcenahle.page"
@@ -182,6 +188,123 @@ import { Icon } from "astro-icon/components";
       >
     </div>
   </div>
+</div>
+
+<div
+  class="modal fade"
+  id="blogHistoryModal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="blogHistoryLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true">&times;</button
+        >
+        <h4 class="modal-title" id="blogHistoryLabel">梅之夏-博客网站历史</h4>
+      </div>
+      <div class="modal-body">
+        <table
+          class="table table-bordered table-striped table-responsive text-center"
+        >
+          <thead>
+            <tr>
+              <th>博客网站代数</th>
+              <th>博客程序</th>
+              <th>文章序号</th>
+              <th>开始日期 ~ 结束日期</th>
+              <th>链接</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>第四代（现行）</td>
+              <td>Hexo</td>
+              <td>457-</td>
+              <td>2026-06-26 ~ 至今</td>
+              <td
+                ><a
+                  href="https://blog.mcenahle.page/"
+                  class="external-link"
+                  rel="noopener noreferrer"
+                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
+                ></td
+              >
+            </tr>
+            <tr>
+              <td>第三代</td>
+              <td>Typecho</td>
+              <td>325-456（132 篇）</td>
+              <td>2025-10-10 ~ 2026-06-23（256 天）</td>
+              <td
+                ><a
+                  href="https://blog.mcenahle.org.cn/"
+                  class="external-link"
+                  rel="noopener noreferrer"
+                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
+                ></td
+              >
+            </tr>
+            <tr>
+              <td>第二代</td>
+              <td>Halo</td>
+              <td>254-324（71 篇）</td>
+              <td>2025-01-26 ~ 2025-10-08（256 天）</td>
+              <td
+                ><a
+                  href="https://halo-blog.mcenahle.org.cn/"
+                  class="external-link"
+                  rel="noopener noreferrer"
+                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
+                ></td
+              >
+            </tr>
+            <tr>
+              <td>第一代</td>
+              <td>Typecho</td>
+              <td>1-253（253 篇）</td>
+              <td>2024-03-17 ~ 2025-01-24（314 天）</td>
+              <td
+                ><a
+                  href="https://typecho-blog.mcenahle.org.cn/"
+                  class="external-link"
+                  rel="noopener noreferrer"
+                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
+                ></td
+              >
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          在第1~3代博客网站中，不再接受新评论，也不再继续发文。如要查看最新的博客文章，请转到&nbsp;
+          <a
+            href="https://blog.mcenahle.page"
+            class="external-link"
+            rel="noopener noreferrer"
+            target="_blank"
+            ><u>现行博客网站</u> <Icon name="mdi:open-in-new" /></a
+          >。
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"
+          >关闭</button
+        >
+        <a
+          href="https://blog.mcenahle.page"
+          target="_blank"
+          class="btn btn-primary"
+          role="button">转到现行博客网站 <Icon name="mdi:open-in-new" /></a
+        >
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal -->
 </div>
 
 <script>
