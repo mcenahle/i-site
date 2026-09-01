@@ -1,0 +1,75 @@
+---
+import { Icon } from "astro-icon/components";
+import Navbar from "../../components/Navbar.astro";
+import AnnouncementsLayout from "../../layouts/AnnouncementsLayout.astro";
+
+export const title =
+  "关于mcenahle不获取minecraft中英雄披风、豪华披风，以及可能弃坑minecraft的声明";
+export const date = "2026-09-01";
+---
+
+<Navbar />
+
+<AnnouncementsLayout title={title} date={date}>
+  <p>目前mojang的活动为：</p>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>披风</th>
+        <th>Java 版</th>
+        <th>获取方式</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Hero Cape（英雄披风）</td>
+        <td>明确确认</td>
+        <td
+          >玩过 Dungeons I，并在 2026/12/31 前登录 Dungeons II；同一 Microsoft
+          账号</td
+        >
+      </tr>
+      <tr>
+        <td>Twisted Cape（扭曲披风）</td>
+        <td>明确确认</td>
+        <td>2026/9/28 前预购 Dungeons II，148或248均可</td>
+      </tr>
+      <tr>
+        <td>Soul Cape（灵魂披风）</td>
+        <td>目前未宣布同步</td>
+        <td>Deluxe Edition 豪华版内容</td>
+      </tr>
+      <tr>
+        <td>Corrupted Creeper Cape</td>
+        <td>目前未宣布同步</td>
+        <td>官方称会通过发布前后的线上/线下推广活动获取</td>
+      </tr>
+      <tr>
+        <td>Special Cape</td>
+        <td>目前未宣布同步</td>
+        <td>获取方式尚未公布</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>
+    由于本人认为，通过付费购买游戏来获得披风的方式，实在是难以接受，且价格过于昂贵，<b
+      >因此决定不获取英雄披风、扭曲披风</b
+    >。
+  </p>
+  <p>
+    之后的披风如有免费的获取渠道，包括其余3个披风，且同步到Java版，则继续参与。
+  </p>
+  <p>
+    目前，弃坑Minecraft的条件为以下4个条件满足2项，即声明退出MC。此判断方式仅为基础判断，若未达成，依然可能退出MC；若达成，<span
+      style="color:red;"><b>必定</b></span
+    >退出MC。
+  </p>
+  <ol>
+    <li>扭曲披风需要花费248元购买Dungeons 2；</li>
+    <li>Soul Cape同步到Java版；</li>
+    <li>Corrupted Creeper Cape需要付费购买；</li>
+    <li>Corrupted Creeper Cape仅Dungeons 2可用。</li>
+  </ol>
+  <p style="text-align: right;">Mcenahle</p>
+  <p style="text-align: right;">2026年9月1日</p>
+</AnnouncementsLayout>

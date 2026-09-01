@@ -1,0 +1,40 @@
+---
+import Layout from "./Layout.astro";
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  title: string;
+  date: string;
+}
+
+const { title, date = "" } = Astro.props;
+---
+
+<Layout title={title}>
+  <main class="container">
+    <ul class="breadcrumb">
+      <li><a href="/">i.mcenahle.page</a></li>
+      <li><a href="javascript:void(0)">个人公告页</a></li>
+      <li class="active">{title}</li>
+    </ul>
+    <div class="panel panel-default">
+      <div class="page-heading" style="padding:15px">
+        <h2>
+          {title}
+          <small style="margin-left: 12px;"
+            ><Icon name="mdi:calendar-month-outline" /> {date}</small
+          >
+        </h2>
+      </div>
+      <div class="panel-body">
+        <div class="article">
+          <slot />
+        </div>
+        <hr style="margin-top: 24px;" />
+        <a class="btn btn-primary" href="/" role="button"
+          ><Icon name="mdi:arrow-left" /> 返回</a
+        >
+      </div>
+    </div>
+  </main>
+</Layout>
