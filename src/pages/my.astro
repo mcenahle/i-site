@@ -1,0 +1,45 @@
+---
+import Navbar from "../components/Navbar.astro";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Layout title="个人简介">
+  <Navbar />
+  <main>
+    <div class="container">
+      <h2>个人简介</h2>
+      <div class="media">
+        <div class="media-left media-top">
+          <img
+            src="https://avatars.githubusercontent.com/u/85427807?v=4"
+            class="media-object"
+            style="width:80px"
+          />
+        </div>
+        <div class="media-body">
+          <h3 class="media-heading">Mcenahle 个人介绍</h3>
+          <p>
+            你好！我是 Mcenahle，目前 20
+            岁，是一名大专生，并为上海师范大学“预备役”学生，并将于 2027 年 4
+            月通过专升本考试进入该本科。
+          </p>
+          <h4>个人爱好</h4>
+          <p>
+            计算机代码编程（网页前端方向），医学知识。还喜欢听歌（纯音乐为主）。
+          </p>
+          <h4>正在做什么</h4>
+          <p>
+            备考教师资格证 / 学习 JavaScript / 维护个人网站 /
+            个人独立游戏暂停开发中。
+          </p>
+          <h4>个人碎碎念</h4>
+          <p>
+            逃过了 Python 的数组和字典，却没能逃过 JavaScript
+            的数组，字典，异步。
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
