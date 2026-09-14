@@ -1,0 +1,40 @@
+---
+import Navbar from "../../components/Navbar.astro";
+import Layout from "../../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<Navbar />
+
+<Layout title="年终总结" description="年终总结">
+  <main class="container">
+    <div class="border-bottom">
+      <h2 class="text-black">年终总结</h2>
+
+      <p>来自我的年终总结！！</p>
+    </div>
+
+    <div class="list-group">
+      <a href="/annual/2025/" class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <div class="fw-bold text-body">2025年终总结</div>
+          </div>
+          <time class="small text-muted">
+            <Icon name="mdi:calendar-month-outline" /> 日期：2025-12-24
+          </time>
+        </div>
+      </a>
+      <a href="/annual/2024/" class="list-group-item">
+        <div class="d-flex justify-content-between">
+          <div>
+            <div class="fw-bold text-body">2024年终总结</div>
+          </div>
+          <time class="small text-muted">
+            <Icon name="mdi:calendar-month-outline" /> 日期：2024-12-31
+          </time>
+        </div>
+      </a>
+    </div>
+  </main>
+</Layout>
