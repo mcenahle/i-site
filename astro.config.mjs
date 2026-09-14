@@ -12,4 +12,8 @@ export default defineConfig({
     enabled: false,
   },
   integrations: [icon(), pagefind()],
+  redirects: {
+    "/game/": "https://game.mcenahle.dev/",
+    "/site-affairs-documents/": "https://mcenahle.dev/site-affairs-documents/",
+  },
 });
