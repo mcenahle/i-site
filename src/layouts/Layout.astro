@@ -2,6 +2,9 @@
 import "../styles/global.scss";
 import Footer from "../components/Footer.astro";
 import { Icon } from "astro-icon/components";
+
+import { ClientRouter } from "astro:transitions";
+
 import "sweetalert2/themes/material-ui.css";
 
 interface Props {
@@ -31,6 +34,8 @@ const { title = "hi.mcenahle.page", description = "" } = Astro.props;
     ></script>
 
     <meta name="generator" content={Astro.generator} />
+
+    <ClientRouter />
     <title>{title}</title>
   </head>
   <body id="top" data-pagefind-body>
@@ -48,9 +53,7 @@ const { title = "hi.mcenahle.page", description = "" } = Astro.props;
       ><Icon name="mdi:arrow-top" style="height:28px; width:20px" />
     </button>
     <Footer />
-  </body>
-
-  <div
+  </body><div
     class="modal fade"
     id="infosModal"
     tabindex="-1"
