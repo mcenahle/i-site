@@ -153,6 +153,10 @@ a {
   }
 }
 
+.pagefind-ui__result-link {
+  transition: all 0.3s ease-in-out;
+}
+
 $article-line-height: 2;
 
 .article {
