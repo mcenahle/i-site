@@ -33,7 +33,7 @@ body::before {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
-  opacity: 0.2;
+  opacity: 0.15;
   z-index: -1;
   pointer-events: none;
 }
@@ -211,6 +211,55 @@ $status-color: #420f95;
 
 main {
   margin-bottom: 40px;
+}
+
+#main {
+  max-width: 800px;
+  .panel-default {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  .breadcrumb {
+    background-color: transparent;
+  }
+
+  .page-heading .category {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
+
+  .category {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+
+  #article {
+    margin-top: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  @media (max-width: 425px) {
+    #article {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .nav-tabs > li.active > a {
+    background: linear-gradient(
+      to bottom,
+      white 33%,
+      white 66%,
+      transparent 100%
+    );
+    border-bottom-color: #dddddd;
+  }
 }
 
 footer {
