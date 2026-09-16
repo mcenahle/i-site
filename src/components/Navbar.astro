@@ -1,6 +1,5 @@
 ---
 import { Icon } from "astro-icon/components";
-import Search from "../components/Search.astro";
 ---
 
 <meta charset="utf-8" />
@@ -62,43 +61,8 @@ import Search from "../components/Search.astro";
             ><Icon name="mdi:account-file-text" /> 站务文件</a
           >
         </li>
-        <li>
-          <a href="#" data-toggle="modal" data-target="#siteSearchModal"
-            ><Icon name="mdi:search" /> 全站搜索</a
-          >
-        </li>
+        <li><a href="/search/"><Icon name="mdi:search" /> 全站搜索</a></li>
       </ul>
     </div>
   </div>
 </nav>
-
-<div
-  class="modal fade"
-  id="siteSearchModal"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="siteSearchModalLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-hidden="true">&times;</button
-        >
-        <h4 class="modal-title" id="siteSearchModalLabel">全站搜索</h4>
-      </div>
-      <div class="modal-body">
-        <Search />
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal"
-          >关闭</button
-        >
-      </div>
-    </div>
-  </div>
-</div>
