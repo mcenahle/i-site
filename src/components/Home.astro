@@ -34,10 +34,7 @@ import { Icon } from "astro-icon/components";
         <li><a href="#devdocs" tabindex="-1" data-toggle="tab">devdocs</a></li>
         <li><a href="#sponsor" tabindex="-1" data-toggle="tab">赞助页</a></li>
         <li><a href="#charity" tabindex="-1" data-toggle="tab">公益记录</a></li>
-        <li><a href="#imgbed" tabindex="-1" data-toggle="tab">图床</a></li>
-        <li>
-          <a href="#admin-imgbed" tabindex="-1" data-toggle="tab">图床管理</a>
-        </li>
+        <li><a href="#resources" tabindex="-1" data-toggle="tab">托管库</a></li>
         <li><a href="#mss" tabindex="-1" data-toggle="tab">mc 生存存档</a></li>
         <li>
           <a href="#certificates" tabindex="-1" data-toggle="tab">证书存档</a>
@@ -136,23 +133,20 @@ import { Icon } from "astro-icon/components";
         role="button">跳转 <Icon name="mdi:open-in-new" /></a
       >
     </div>
-    <div class="tab-pane fade" id="imgbed">
+    <div class="tab-pane fade" id="resources">
       <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
-      <p>我的图床网站。由于技术原因，无法提供直接访问通道。</p>
-      <a
-        class="btn btn-primary disabled"
-        href="https://imgbed.mcenahle.page"
-        target="_blank"
-        rel="noopener noreferrer"
-        role="button">跳转 <Icon name="mdi:open-in-new" /></a
-      >
-    </div>
-    <div class="tab-pane fade" id="admin-imgbed">
-      <p class="text-success"><Icon name="mdi:check" /> 现行状态：运行中</p>
-      <p>管理我的图床。</p>
+      <p>我的资源库网站，URL 遵循语义化。</p>
+      <p>
+        有关详细信息，请查看 <a
+          href="https://mcenahle.dev/site-affairs-documents/2026-08/"
+          target="_blank"
+          ><u>《关于建立托管库的决定（mcenahle 站务文件-2026【8】号）》</u>
+          <Icon name="mdi:open-in-new" /></a
+        >。
+      </p>
       <a
         class="btn btn-primary"
-        href="https://admin.imgbed.mcenahle.page"
+        href="https://resources.mcenahle.page"
         target="_blank"
         rel="noopener noreferrer"
         role="button">跳转 <Icon name="mdi:open-in-new" /></a
