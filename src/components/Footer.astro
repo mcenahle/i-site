@@ -34,20 +34,37 @@ import { Icon } from "astro-icon/components";
     <div class="row">
       <div class="col-sm-8 footer-text-left">
         <p>
-          <img
-            src="/not-by-ai-resources/Photographed By Human/_SVG/Photographed-By-Human-Not-By-AI-Badge-white.svg"
-            alt="Photographed By Human Badge"
-            width="80"
-            style="margin-right: 12px;"
-          />
-          <img
-            src="/not-by-ai-resources/Written By Human/_SVG/Written-By-Human-Not-By-AI-Badge-white.svg"
-            alt="Written By Human Badge"
-            width="80"
-            style="margin-right: 12px;"
-          />
+          <a href="https://notbyai.fyi" target="_blank">
+            <img
+              src="/not-by-ai-resources/Photographed By Human/_SVG/Photographed-By-Human-Not-By-AI-Badge-white.svg"
+              alt="Photographed By Human Badge"
+              width="80"
+            />
+          </a>
+          <span style="margin-right: 12px;"></span>
+          <a href="https://notbyai.fyi" target="_blank">
+            <img
+              src="/not-by-ai-resources/Written By Human/_SVG/Written-By-Human-Not-By-AI-Badge-white.svg"
+              alt="Written By Human Badge"
+              width="80"
+            />
+          </a>
         </p>
-        <p>© 2026 hi.mcenahle.page. Powered by Astro. Hosted by Cloudflare.</p>
+        <p>
+          © 2026 hi.mcenahle.page. Powered by <a
+            href="https://astro.build/"
+            target="_blank"
+            style="color: #ffffff"
+          >
+            <u>Astro</u> <Icon name="mdi:open-in-new" /></a
+          >. Hosted by <a
+            href="https://dash.cloudflare.com/"
+            target="_blank"
+            style="color: #ffffff"
+          >
+            <u>Cloudflare</u> <Icon name="mdi:open-in-new" /></a
+          >.
+        </p>
         <p>
           <Icon name="mdi:github" /> 可在 GitHub 上 <a
             href="https://mcenahle.dev/gh/i-site/"
