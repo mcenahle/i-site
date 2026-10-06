@@ -13,7 +13,7 @@ const { title, date, description, originalLink = "" } = Astro.props;
 ---
 
 <Layout title={title} description={description}>
-  <main class="container">
+  <main class="container" id="main">
     <ul class="breadcrumb">
       <li><a href="/">hi.mcenahle.page</a></li>
       <li><a href="/articles/">精选博客文章</a></li>
@@ -21,12 +21,17 @@ const { title, date, description, originalLink = "" } = Astro.props;
     </ul>
     <div class="panel panel-default">
       <div class="page-heading" style="padding:15px">
+        <span class="category">精选博客文章</span>
         <h2>
           {title}
-          <small style="margin-left: 12px;"
-            ><Icon name="mdi:calendar-month-outline" /> {date}</small
-          >
         </h2>
+        <h4>
+          <small
+            ><Icon name="mdi:account-check" /> 作者：Mcenahle | <Icon
+              name="mdi:calendar-month-outline"
+            /> 写作日期：{date}</small
+          >
+        </h4>
       </div>
       <div class="panel-body">
         <div class="alert alert-info">
