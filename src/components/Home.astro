@@ -78,7 +78,20 @@ import { Icon } from "astro-icon/components";
         个人主要发文平台。<a
           href="#"
           data-toggle="modal"
-          data-target="#blogHistoryModal">查看我的博客网站历史</a
+          data-target="#blogHistoryModal"
+          ><u>查看我的博客网站历史</u>&nbsp;
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 24 24"
+            data-icon="boxicons:cursor-click-filled"
+            ><symbol id="ai:boxicons:cursor-click-filled"
+              ><path
+                fill="currentColor"
+                d="M9 2h2v3H9zM2 9h3v2H2zm18.37 4.93c.38-.15.63-.52.63-.92s-.24-.77-.62-.93l-12-5a.98.98 0 0 0-1.09.22c-.29.29-.37.72-.22 1.09l5 12c.16.37.52.62.92.62c.41 0 .77-.25.92-.63l1.44-3.59l4.93 4.93l1.41-1.41l-4.93-4.93l3.59-1.44ZM3.96 2.54l-.71.71l-.71.71l1.25 1.25l1.25 1.25l.71-.71l.71-.71l-1.25-1.25z"
+              ></path></symbol
+            ><use href="#ai:boxicons:cursor-click-filled"></use></svg
+          ></a
         >。
       </p>
       <a
@@ -207,7 +220,7 @@ import { Icon } from "astro-icon/components";
   aria-labelledby="blogHistoryLabel"
   aria-hidden="true"
 >
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button
@@ -251,45 +264,38 @@ import { Icon } from "astro-icon/components";
               <td>Typecho</td>
               <td>325-456（132 篇）</td>
               <td>2025-10-10 ~ 2026-06-23（256 天）</td>
-              <td
-                ><a
-                  href="https://blog.mcenahle.org.cn/"
-                  class="external-link"
-                  rel="noopener noreferrer"
-                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
-                ></td
-              >
+              <td>暂不可用</td>
             </tr>
             <tr>
               <td>第二代</td>
               <td>Halo</td>
               <td>254-324（71 篇）</td>
               <td>2025-01-26 ~ 2025-10-08（256 天）</td>
-              <td
-                ><a
-                  href="https://halo-blog.mcenahle.org.cn/"
-                  class="external-link"
-                  rel="noopener noreferrer"
-                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
-                ></td
-              >
+              <td>暂不可用</td>
             </tr>
             <tr>
               <td>第一代</td>
               <td>Typecho</td>
               <td>1-253（253 篇）</td>
               <td>2024-03-17 ~ 2025-01-24（314 天）</td>
-              <td
-                ><a
-                  href="https://typecho-blog.mcenahle.org.cn/"
-                  class="external-link"
-                  rel="noopener noreferrer"
-                  target="_blank"><u>链接</u> <Icon name="mdi:open-in-new" /></a
-                ></td
-              >
+              <td>暂不可用</td>
             </tr>
           </tbody>
         </table>
+        <div class="alert alert-warning" style="margin-bottom: 16px;">
+          <p>
+            由于 <code>mcenahle.cn(.org.cn)</code>&nbsp;
+            已被弃用，且静态化的思想，故之前的博客网站预览暂不可用。目前正在考虑导入之前的博客文章至现行博客网站。详见&nbsp;
+            <a
+              href="https://mcenahle.dev/posts/20261003/"
+              class="external-link"
+              rel="noopener noreferrer"
+              target="_blank"
+              ><u>https://mcenahle.dev/posts/20261003/</u>&nbsp;
+              <Icon name="mdi:open-in-new" /></a
+            >。
+          </p>
+        </div>
         <p>
           在第1~3代博客网站中，不再接受新评论，也不再继续发文。如要查看最新的博客文章，请转到&nbsp;
           <a
