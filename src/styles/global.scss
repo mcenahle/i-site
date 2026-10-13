@@ -131,7 +131,8 @@ p {
 code {
   font-family: "JetBrainsMono-Regular";
   background-color: transparent;
-  color: #333;
+  color: currentColor;
+  padding: 0;
   font-size: 100%;
 }
 
