@@ -28,7 +28,7 @@ body::before {
   width: 100vw;
   height: 100vh;
 
-  background-image: url("/images/background.avif");
+  background-image: url("/images/To the Moon — Last hour RPG Demo.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -141,8 +141,8 @@ code {
   border: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
 }
 
 a {
