@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="v6-tease">
+  <Icon name="mdi:verified" /> <b>本网站为 Mcenahle 主页网站。</b>
+  处于现代化考虑，网站即将从 Bootstrap 3 升级到 6，目前正在等待{" "}
+  <a
+    href="https://github.com/twbs/bootstrap/releases"
+    rel="noopener"
+    target="_blank"
+  >
+    <u>Bootstrap 6 的发布情况</u> <Icon name="mdi:open-in-new" />
+  </a>
+  。6 发布后，将进行更新。
+  <a href="https://hi.mcenahle.dev" rel="noopener" target="_blank">
+    <u>查看开发中、正在逐步迁移的新个人主页网站</u>{" "}
+    <Icon name="mdi:open-in-new" />
+  </a>
+</div>
+
+<style>
+  .v6-tease {
+    display: block;
+    padding: 10px 14px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(90deg, rgb(168, 131, 21), rgb(49, 135, 255));
+    a {
+      color: white;
+    }
+  }
+</style>
