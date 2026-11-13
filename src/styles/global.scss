@@ -16,7 +16,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  padding-top: 60px;
   font-family: "Geist";
 }
 
@@ -140,6 +139,8 @@ code {
   background-color: rgba(123, 182, 255, 0.4);
   border: none;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+  margin-bottom: 0px;
 
   -webkit-backdrop-filter: blur(3px);
   backdrop-filter: blur(3px);
